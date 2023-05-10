@@ -9,15 +9,18 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 1s linear;
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  animation-name: background-color-change;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -34,5 +37,23 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes background-color-change {
+  0% {
+    background: #BD00FF;
+  }
+  25% {
+    background: #e600ff;
+  }
+  50% {
+    background: #fb00ff;
+  }
+  75% {
+    background: #ff00fb;
+  }
+  100% {
+    background: #FF5F96;
   }
 }

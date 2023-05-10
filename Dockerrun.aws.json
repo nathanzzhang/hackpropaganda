@@ -1,0 +1,14 @@
+{
+    "AWSEBDockerrunVersion": "1",
+    "Image": {
+      "Name": "natezhang16/hackpropaganda",
+      "Update": "true"
+    },
+    "Ports": [
+      {
+        "ContainerPort": 3000,
+        "HostPort": 8000
+      }
+    ]
+  }
+
